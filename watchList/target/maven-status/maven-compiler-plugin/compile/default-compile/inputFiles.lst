@@ -1,0 +1,15 @@
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\dto\JobDetail.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\entity\Location.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\service\IWishListService.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\exception\JobAlreadyExistException.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\repository\IWishListRepository.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\WishListMongoConfig.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\exception\NoJobFoundException.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\controller\CentralizedExceptionHandler.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\util\JobUtil.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\entity\WishListJob.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\dto\RemoveRequest.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\service\WishListServiceImpl.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\controller\WishListController.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\dto\AddRequest.java
+C:\job-hunt-project\ajay\serverside\watchList\src\main\java\com\job\watchlist\JobApplication.java
