@@ -1,0 +1,40 @@
+<ng-container  >
+  <div style="margin-top: 100px;" class="container" >
+    <h3>Your Watchlist</h3>
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="fl-table">
+          <thead>
+            <tr>
+              <th>Sr.no</th>
+              <th>job id </th>
+              <th>job name </th>
+            
+              <th>job publication date</th>
+              <th>job short name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let iterator of watchListArray; let i = index">
+              <td>{{i+1}}</td>
+              <td>{{iterator.externalServerId}}</td>
+              <td>{{iterator.name}}</td>
+             
+              <td>{{iterator.publicationDate}}</td>
+              <td>{{iterator.shortName}}</td>
+              <td > <button class="btn btn-danger"  (click)= "remove(iterator.externalServerId)"><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+
+         
+      
+      </div>
+    </div>
+  </div>
+  
+</ng-container>
+<div style="margin: 40px 0px 0px 500px;">
+  add more to watchlist
+   <a routerLink="/listjobs" class="btn btn-primary">go to jobList</a>
+</div>

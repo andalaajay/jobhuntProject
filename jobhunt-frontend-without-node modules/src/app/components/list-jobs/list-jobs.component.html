@@ -1,0 +1,27 @@
+
+<h3>list of jobs are</h3>
+<div class="container" style="margin-top: 80px;">
+    <div class="row">
+        <ng-container *ngFor="let iterator of jobs">
+            <div class="col-lg-12 d-flex align-items-stretch"style="margin-top: 20px;">
+                <div class="card">
+                    <div class="card-body" style="background-color: hsla(0, 0%, 0%, 0);">
+                        <h5  style="color:#ff00bf" class="card-title">{{iterator.name}}</h5>
+                        <p  class="card-text"><strong>job id</strong>: {{iterator.externalServerId}}</p>
+                        <div [innerHTML]="iterator.content"></div>
+                        <p  class="card-text"><strong>publication date</strong>: {{iterator.publicationDate}}</p>
+                        <p  class="card-text"><strong>job shortname</strong>: {{iterator.shortName}}</p>
+                        <p class="card-text"><strong>company name:</strong>{{iterator.company}}</p>
+                        <p class="card-text"><strong>category:</strong>{{iterator.category}}</p>
+                        <ng-container *ngFor="let location of iterator.locations">
+                            <p  class="card-text"><strong>job location</strong>: {{location.name}}</p>
+                        </ng-container>
+                        <div class="text-center">
+                        <a class="btn btn-primary" (click)="addToWatchList(iterator)">add to watchlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

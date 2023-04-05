@@ -1,0 +1,40 @@
+<div *ngIf="isLoggedIn()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+    <div class="container-xxl">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!--<div *ngIf="isLoggedIn()">-->
+                <a routerLink="listjobs">job list</a>
+            <a routerLink="watchlist">your watchlist jobs</a>
+            <!--</div>-->
+            <a routerLink="registerUser">register form </a>
+             <a routerLink="loginUser">login user</a>
+        </div>
+        <span style="font-size:25px;cursor:pointer;color:#fff" onclick="openNav()">&#9776;</span>
+        <div class="navbar-brand align-item-center d-flex ps-3 px-2 ">
+            <a><img class="logo1" src="https://cdn.pixabay.com/photo/2017/10/17/10/02/dream-job-2860022_960_720.jpg" alt="d"><strong class="ps-5 ms-2" style="font-size: 30px;color:white;"></strong></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <table>
+                    <tr>
+                        <td>
+                           <h3 style="color:rgb(255, 0, 85)"> WELCOME TO JOBHUNT APP</h3>
+                        </td>
+                    </tr>
+                </table>
+                <a class="nav-link" routerLink="/userDetails"><i style="font-size: 30px;color: #fff;" class="fa fa-user ps-2"></i></a>
+                <a routerLink="/watchlist" class="btn btn-primary" style="font-style:italic;margin-left:30px">watchList</a>
+                
+                    <button (click)="logout()" class="btn btn-danger" style="margin-left:20px">Logout</button>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+</div>
